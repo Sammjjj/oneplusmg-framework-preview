@@ -106,3 +106,6 @@ plugins:
   - jemoji
   - jekyll-sitemap
   - jekyll-github-metadata
+
+url: "https://sammjjj.github.io"
+baseurl: "/oneplusmg-framework-preview"
