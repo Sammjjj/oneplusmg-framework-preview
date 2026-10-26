@@ -4,18 +4,23 @@ permalink: "/framework-foundations"
 page_id: framework-foundations
 navigation_tiles:
   - page_id: governance-elsi
+    image_url: /assets/img/section-icons/data-standard-v1.svg
   - page_id: technical-infrastructure
+    image_url: /assets/img/section-icons/data-infrastructure-v1.svg
   - page_id: data-metadata
+    image_url: /assets/img/section-icons/data-governance-v1.svg
   - page_id: genomics-into-healthcare
+    image_url: /assets/img/section-icons/genomics-into-healthcare.svg
 ---
-
-{% include page-navigation-tiles.html tiles=page.navigation_tiles %}
 
 <div class="my-4">
   <p>The 1+MG Framework Foundations bring together the guidance needed to enable secure, responsible and interoperable access to genomic and associated clinical data across Europe. They provide a common starting point for understanding the requirements and approaches that support the 1+MG initiative.</p>
 
   <p>Explore the four areas above for guidance on legal, ethical and governance considerations, technical infrastructure, data and metadata, and the integration of genomics into healthcare and its long-term sustainability. Each area brings together the principles, recommendations and resources relevant to planning and implementing the Framework.</p>
 </div>
+
+{% include page-navigation-tiles.html tiles=page.navigation_tiles %}
+
 
 <div class="foundations-resources-full-width">
   {% include resource-tiles_compact.html

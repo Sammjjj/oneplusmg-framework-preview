@@ -79,6 +79,9 @@ page metadata or to create a tile without a page_id.
 
       <div class="{% if include.five_column_grid %}col{% elsif include.match_foundations_grid %}col-12 col-sm-6 col-lg-3{% else %}col-12 col-sm-6 col-lg-4 col-xl-3{% endif %}"{% if tile.anchor_id %} id="{{ tile.anchor_id | escape }}"{% endif %}>
         <div class="card border bg-white h-100">
+          {% if tile.image_url %}
+          <img src="{{ tile.image_url | relative_url }}" class="card-img-top h-icon-5 mx-auto" alt="" aria-hidden="true">
+          {% endif %}
           <div class="card-body text-center">
 
             <a

@@ -49,6 +49,15 @@
 
 /* Consistent interaction feedback for page-navigation tiles and resource cards.
    The homepage .landingpage cards already use $box-shadow on hover. */
+/* Match the homepage tile icons outside the .landingpage container. */
+.page-navigation-tiles .card-img-top {
+    height: 5em;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    padding: 1rem 1rem 0;
+}
+
 .page-navigation-tiles .card,
 .resource-tile .card {
     transition: box-shadow 0.2s ease;

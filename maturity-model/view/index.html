@@ -1,0 +1,47 @@
+---
+layout: default
+title: "Genomics in Healthcare Maturity Level Model (MLM)"
+description: "Explore the Genomics in Healthcare MLM and glossary."
+permalink: /maturity-model/view/
+hide_sidebar: true
+toc: false
+---
+
+<p>A tool for healthcare systems to self-evaluate the level of maturity of their genomic medicine practices according to a common matrix, and to define a path to optimisation.</p>
+<p>The Genomics in Healthcare MLM assesses indicators in eight key domains for the implementation of genomics in healthcare. Maturity in each domain is assessed by selecting one of five pre-defined maturity levels regarding the specified indicators.</p>
+<p>The five maturity levels are indicative of a maturity progression, from a non-existent or ad hoc level of implementation to a level of maturity characterised by a system adaptable to opportunity and change, and in support of international cooperation.</p>
+<p>A <a href="https://zenodo.org/records/10066995">1+MG MLM for Healthcare User Guide</a> is available.</p>
+<iframe
+  id="mlm-model-frame"
+  title="Interactive Genomics in Healthcare MLM"
+  src="{{ '/maturity-model/view/model-content.html' | relative_url }}"
+  style="display:block;width:100%;min-height:850px;border:0;background:#fff;"
+  loading="eager"
+></iframe>
+<p class="small"><a href="{{ '/maturity-model/view/model-content.html' | relative_url }}">Open the model in a separate page</a></p>
+<script>
+(function () {
+  const frame = document.getElementById('mlm-model-frame');
+  if (!frame) return;
+  frame.addEventListener('load', function () {
+    try {
+      const doc = frame.contentDocument;
+      if (!doc) return;
+      const resize = function () {
+        frame.style.height = Math.max(850, doc.body.scrollHeight, doc.documentElement.scrollHeight) + 'px';
+      };
+      resize();
+      if (typeof ResizeObserver !== 'undefined') {
+        const observer = new ResizeObserver(resize);
+        observer.observe(doc.body);
+        observer.observe(doc.documentElement);
+      }
+      frame.contentWindow.addEventListener('resize', resize);
+      doc.addEventListener('click', function () { requestAnimationFrame(resize); });
+    } catch (error) {
+      // Same-origin embedding is expected; leave the frame scrollable if restricted.
+      frame.style.overflow = 'auto';
+    }
+  });
+})();
+</script>

@@ -9,12 +9,8 @@ toc: false
 
 [← Healthcare integration and sustainability]({{ '/genomics-into-healthcare' | relative_url }})
 
-To fully exploit the potential of genomic information to benefit citizens health, it is crucial to understand how effectively healthcare systems implement genomic medicine. In the context of the 1+ Million Genomes Initiative (1+MG), a Maturity Level Model (MLM) was developped for healthcare systems to evaluate the maturity of their genomic medicine practices, and define a path to optimization.
+### [Genomics in Healthcare Maturity Level Model]({{ '/maturity-model/view/' | relative_url }})
 
-
-<img src="{{ 'assets/img/1+mg-roadmap-v2.png' | relative_url }}" class="m-2" style="max-width:100%; max-height: 100%; vertical-align: middle" alt="1+MG Roadmap" />
-
-### [Genomics in Healthcare Maturity Level Model](https://b1mg-project.eu/resources/maturity-level-model)
 A tool for healthcare systems to self-evaluate the level of maturity of their genomic medicine practices according to a common matrix, and to define a path to optimization. 
 
 The MLM assesses indicators in eight key domains for the implementation of genomics in healthcare. Maturity in each domain is assessed by selecting one of five pre-defined maturity levels regarding the specified indicators. 

@@ -1,0 +1,5 @@
+.add-comment label, #contact label { display: block; }
+
+header .header-bg { background: none; }
+
+.bg3 { background: url('https://raw.githubusercontent.com/B1MG-project/MLM/main/img/parallax/bg3.jpg') 50% 50% repeat-y fixed; }
